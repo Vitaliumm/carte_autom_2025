@@ -157,7 +157,7 @@ extern "C" {
     
 #define ACTIV_INTER_UART1_TX            1   // Uart Xbee : Tx
 #define ACTIV_INTER_UART1_RX            1   // Uart XBEE : Rx
-#define ACTIV_INTER_UART2_TX            1   // UART AX12 : Acquittement trame envoyée
+#define ACTIV_INTER_UART2_TX            1   // UART AX12 : Acquittement trame envoyï¿½e
 #define ACTIV_INTER_UART2_RX            1   // UART AX12
     
 #define ACTIV_INTER_QEI1                1   // Codeurs
@@ -178,15 +178,15 @@ typedef struct
 /******************************************************************************/
 
     /**
-     * Toutes les variables appellées par la le timer d'asserv de 5 ms
-     * sont définies en near 
-     * Elles sont ainsi stockée dans la mémoire de 8 ko proche du cpu
-     * et on y accède plus rapidement
+     * Toutes les variables appellï¿½es par la le timer d'asserv de 5 ms
+     * sont dï¿½finies en near 
+     * Elles sont ainsi stockï¿½e dans la mï¿½moire de 8 ko proche du cpu
+     * et on y accï¿½de plus rapidement
      */
     
     /**
-     * Toutes les variables dont la valeurs est succeptibles d'être modifiée
-     * dans une interruption doivent être déclarée volatile !
+     * Toutes les variables dont la valeurs est succeptibles d'ï¿½tre modifiï¿½e
+     * dans une interruption doivent ï¿½tre dï¿½clarï¿½e volatile !
      */
     
     
@@ -207,19 +207,19 @@ typedef struct
     void ConfigADC (void);
 
     /**
-     * Fonction qui initialise tous les systèmes de la carte
+     * Fonction qui initialise tous les systï¿½mes de la carte
      * Uart, Timer, PWM, mapping ....
      */
     void init_system (void);
 
 
     /**
-     * Fonction qui rèfle l'horloge à 80Mhz
+     * Fonction qui rï¿½fle l'horloge ï¿½ 80Mhz
      */
     void init_clock(void);
     
     /**
-     * Fonction qui initialise le compteur de temps de match à zéro
+     * Fonction qui initialise le compteur de temps de match ï¿½ zï¿½ro
      */
     void init_compteur_temps_match();
 
@@ -234,7 +234,7 @@ typedef struct
 
 
    /**
-    * Configuration du Timer de 10 ms pour l'évitement
+    * Configuration du Timer de 10 ms pour l'ï¿½vitement
     *        /!\  ATTENTION : TIMER SAFE   /!\
     * /!\ INTERDICTION D'UTILISER DES FONCTIONS BLOQUANTES /!\
     * /!\ OU DE DESACTIVER LE DECOMPTE DU TIMER PENDANT   /!\
@@ -272,7 +272,7 @@ typedef struct
 
     /**
      * Fonction qui configure toutes les interruptions
-     * Ainsi que les priorités
+     * Ainsi que les prioritï¿½s
      */
     void ConfigInterrupt (void);
 
@@ -294,7 +294,7 @@ typedef struct
 
     void init_AX12(); 
 
-    void setPWMOutput(char output, unsigned int percent);
+    //void setPWMOutput(char output, unsigned int percent);
     void ConfigPWM (void );
     
 #ifdef	__cplusplus

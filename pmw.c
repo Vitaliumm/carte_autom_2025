@@ -31,7 +31,7 @@ void ConfigPWM (void)
     
     //P1TMRbits.PTMR =0;
     //P1TMRbits.PTDIR =01; // counting up
-        P1TPER     = 10417;		//F=60Hz  15 bits PTPER = FCY/F*prescale*postscale -1 
+        P1TPER     = 12500;		//F=60Hz  15 bits PTPER = FCY/F*prescale*postscale -1 
     // 40Mz/50*64*1 -1 = 12500
     
    
@@ -133,7 +133,7 @@ void ConfigPWM (void)
 
 }
 
-
+/* 
 void setPWMOutput(char output,  uint16_t percent) {
      double dutyCycleValue;
 
@@ -168,3 +168,4 @@ void setPWMOutput(char output,  uint16_t percent) {
 
   
 }
+*/
